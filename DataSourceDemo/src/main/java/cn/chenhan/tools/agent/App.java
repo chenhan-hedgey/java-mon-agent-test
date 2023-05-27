@@ -42,7 +42,7 @@ public class App {
         for (int i = 0; i < 20; i++) {
             try(Connection connection = pool.getConnection()){
                 Statement statement = connection.createStatement();
-                int num = new Random().nextInt(1000);
+                int num = new Random().nextInt(10000);
                 statement.execute("select delay("+num+") from dual");
                 logger.info("第{}次：select delay({}) from dual",i,num);
             }catch (SQLException e){
