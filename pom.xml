@@ -16,6 +16,8 @@
         <module>agent-intro</module>
         <module>demo</module>
         <module>demo2</module>
+        <module>demo-test</module>
+        <module>agent-constrcutor</module>
     </modules>
 
     <properties>
